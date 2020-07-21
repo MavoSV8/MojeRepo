@@ -1,19 +1,17 @@
 package myprojects.proj1;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class MobilePhone
 {
     ArrayList<Contact> Contacts = new ArrayList<>();
-    public Contact createContact(String phNr,String fNam,String lNam)
+
+
+
+    public void addContact(String phoneNr,String fName)
     {
-
-        return
-    }
-    public void addContact(String phoneNr,String fName,String lName)
-    {
-
-
+        Contacts.add(new Contact(phoneNr,fName));
 
     }
     public void removeContact(String name)
@@ -23,17 +21,21 @@ public class MobilePhone
     }
     public void listContacts()
     {
-
+        System.out.println(Contacts);
 
     }
-    public void updateContact(Contact contact)
+    public void updateContact(String Name)
     {
 
     }
-    public void searchContact(String name)
+    public int searchContact(String name)
     {
+        int index = Contacts.indexOf(name);
 
+        return index;
 
     }
+
+
 
 }
