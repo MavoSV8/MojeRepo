@@ -1,11 +1,11 @@
 package myprojects.proj1;
 
 public class Contact {
-    String phoneNum;
+    int phoneNum;
     String Name;
 
 
-    public Contact(String num,String fName)
+    public Contact(int num,String fName)
     {
     phoneNum = num;
     Name = fName;
@@ -17,7 +17,7 @@ public class Contact {
         return Name;
     }
 
-    public String getPhoneNum() {
+    public int getPhoneNum() {
         return phoneNum;
     }
 

@@ -9,16 +9,19 @@ public class MobilePhone
 
 
 
-    public void addContact(String phoneNr,String fName)
+    public void addContact(int phoneNr,String fName)
     {
         Contacts.add(new Contact(phoneNr,fName));
 
     }
-    public void removeContact(String name)
+    public void removeContact(String phN)
     {
 
 
     }
+
+
+
     public void listContacts()
     {
         System.out.println(Contacts);
@@ -28,7 +31,7 @@ public class MobilePhone
     {
 
     }
-    public int searchContact(String phNr,String name)
+    public int searchContact(int phNr,String name)
     {
         int index = Contacts.indexOf(new Contact(phNr,name));
         if (index < 0)
