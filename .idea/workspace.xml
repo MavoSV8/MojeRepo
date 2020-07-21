@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f023d557-c976-46e5-8cdb-314ab61bddbe" name="Default Changelist" comment="" />
+    <list default="true" id="f023d557-c976-46e5-8cdb-314ab61bddbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/myprojects/proj1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myprojects/proj1/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1f0l6TU3ubmM15x7jWidFs0M77n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,10 +45,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595362715263</updated>
+      <workItem from="1595362717606" duration="446000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1595363142328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595363142328" />
   </component>
 </project>
