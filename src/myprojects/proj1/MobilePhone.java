@@ -5,9 +5,14 @@ import java.util.ArrayList;
 public class MobilePhone
 {
     ArrayList<Contact> Contacts = new ArrayList<>();
+    public Contact createContact(String phNr,String fNam,String lNam)
+    {
+
+        return
+    }
     public void addContact(String phoneNr,String fName,String lName)
     {
-    Contact
+
 
 
     }

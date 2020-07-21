@@ -7,6 +7,8 @@ public class Contact {
 
     public Contact(String num,String fName,String lName)
     {
+    phoneNum = num;
+    firstName = fName;
 
 
     }
