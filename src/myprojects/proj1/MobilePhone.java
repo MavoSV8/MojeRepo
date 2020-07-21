@@ -1,7 +1,7 @@
 package myprojects.proj1;
 
 import java.util.ArrayList;
-import java.util.Objects;
+
 
 public class MobilePhone
 {
@@ -28,9 +28,14 @@ public class MobilePhone
     {
 
     }
-    public int searchContact(String name)
+    public int searchContact(String phNr,String name)
     {
-        int index = Contacts.indexOf(name);
+        int index = Contacts.indexOf(new Contact(phNr,name));
+        if (index < 0)
+        {
+            System.out.println("There is no such contact");
+
+        }
 
         return index;
 
