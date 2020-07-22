@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void Menu(int option, MobilePhone mobile) throws InterruptedException {
-        Scanner input = new Scanner(System.in);
+        Scanner input2 = new Scanner(System.in);
         int phoneNumber;
         String contactName;
 
@@ -18,45 +18,47 @@ public class Main {
            break;
            case 2:
                System.out.println("Type number of contact you want to add:");
-               phoneNumber = input.nextInt();
-               input.nextLine();
+               phoneNumber = input2.nextInt();
+               input2.nextLine();
                System.out.println("Type name of contact you want to add:");
-               contactName = input.nextLine();
+               contactName = input2.nextLine();
                mobile.addContact(phoneNumber,contactName);
                break;
            case 3:
                System.out.println("Type number of contact you want to remove:");
-               phoneNumber = input.nextInt();
-               input.nextLine();
+               phoneNumber = input2.nextInt();
+               input2.nextLine();
                System.out.println("Type name of contact you want to remove:");
-               contactName = input.nextLine();
+               contactName = input2.nextLine();
                mobile.removeContact(phoneNumber,contactName);
                break;
            case 4:
                System.out.println("Type old number:");
-               int phoneNumberold = input.nextInt();
-               input.nextLine();
+               int phoneNumberold = input2.nextInt();
+               input2.nextLine();
                System.out.println("Type new number:");
-               int phoneNumbernew = input.nextInt();
-               input.nextLine();
+               int phoneNumbernew = input2.nextInt();
+               input2.nextLine();
                System.out.println("Type old name:");
-               String contactNameold = input.nextLine();
+               String contactNameold = input2.nextLine();
                System.out.println("Type new name:");
-               String contactNamenew = input.nextLine();
+               String contactNamenew = input2.nextLine();
                mobile.updateContact(phoneNumberold,contactNameold,phoneNumbernew,contactNamenew);
                break;
            case 5:
                System.out.println("Type number of contact you want to find:");
-               phoneNumber = input.nextInt();
-               input.nextLine();
+               phoneNumber = input2.nextInt();
+               input2.nextLine();
                System.out.println("Type name of contact you want to find:");
-               contactName = input.nextLine();
+               contactName = input2.nextLine();
+
                mobile.searchContact(phoneNumber,contactName);
                break;
             case 6:
                 System.out.println("Quitting.");
                 TimeUnit.SECONDS.sleep(3);
                 System.exit(1);
+                break;
        }
     }
 
@@ -64,7 +66,8 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
         MobilePhone Nokia = new MobilePhone();
-
+        //Nokia.addContact(1,"a");
+        //Nokia.searchContact(1,"a");
         while(true) {
             System.out.println("Menu");
             System.out.println("============================");

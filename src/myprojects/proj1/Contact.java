@@ -30,7 +30,7 @@ public class Contact {
     @Override
     public boolean equals(Object contact) {
         Contact newContact = (Contact)contact;
-        if(newContact.getName() == this.Name && newContact.getPhoneNum() == this.phoneNum)
+        if(newContact.getName().equals(this.Name) && newContact.getPhoneNum() == this.phoneNum)
         {
             return true;
         }
