@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f023d557-c976-46e5-8cdb-314ab61bddbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myprojects/proj1/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myprojects/proj1/Contact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myprojects/proj1/MobilePhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myprojects/proj1/MobilePhone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +55,8 @@
       <option name="presentableId" value="Default" />
       <updated>1595362715263</updated>
       <workItem from="1595362717606" duration="3475000" />
-      <workItem from="1595368517163" duration="2934000" />
+      <workItem from="1595368517163" duration="2960000" />
+      <workItem from="1595416626855" duration="2628000" />
     </task>
     <task id="LOCAL-00001" summary="test 2">
       <created>1595363183947</created>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595370777841</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Zaktualizowane klasy">
+      <created>1595371480791</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595371480791</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,21 +120,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="Zaktualizowane klasy" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1595370777042">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1595371479911">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1595370777042" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1595371479911" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1595363142328">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595363142328" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595370787188">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595371486709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595370787188" />
-    <state x="257" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1595368518244">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595371486709" />
+    <state x="257" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1595416970214">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="257" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595368518244" />
+    <state x="257" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595416970214" />
   </component>
 </project>

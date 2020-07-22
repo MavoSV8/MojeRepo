@@ -27,8 +27,32 @@ public class MobilePhone
         System.out.println(Contacts);
 
     }
-    public void updateContact(String Name)
+    public void updateContact(int phNr,String Name,String newName)
     {
+    int index = searchContact(phNr,Name);
+    if(index < 0)
+    {
+        System.out.println("There is no such contact");
+    }
+    else {
+      Contacts.set(index,new Contact(phNr,newName));
+        System.out.println("Contact Updated");
+
+    }
+
+    }
+    public void updateContact(int phNr,String Name,int newPhNr)
+    {
+        int index = searchContact(phNr,Name);
+        if(index < 0)
+        {
+            System.out.println("There is no such contact");
+        }
+        else {
+            Contacts.set(index,new Contact(newPhNr,Name));
+            System.out.println("Contact Updated");
+
+        }
 
     }
     public int searchContact(int phNr,String name)
@@ -36,8 +60,8 @@ public class MobilePhone
         int index = Contacts.indexOf(new Contact(phNr,name));
         if (index < 0)
         {
-            System.out.println("There is no such contact");
 
+            return -1;
         }
 
         return index;
