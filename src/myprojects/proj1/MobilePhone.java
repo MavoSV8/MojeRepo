@@ -33,7 +33,12 @@ public class MobilePhone
 
     public void listContacts()
     {
-        System.out.println(Contacts);
+        int x = 1;
+        for(Contact i : Contacts)
+        {
+            System.out.println(x + ". Phone Number: "+i.phoneNum + " Name: " + i.Name);
+            x++;
+        }
 
     }
     public void updateContact(int phNr,String Name,String newName)
@@ -87,7 +92,7 @@ public class MobilePhone
             System.out.println("There is no such contact");
             return -1;
         }
-
+        System.out.println(index + " " + Contacts.get(index).Name + " " + Contacts.get(index).phoneNum );
         return index;
 
     }

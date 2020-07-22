@@ -1,12 +1,13 @@
 package myprojects.proj1;
 
+import java.awt.*;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
-    public void Menu(int option, MobilePhone mobile)
-    {
+    public static void Menu(int option, MobilePhone mobile) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         int phoneNumber;
         String contactName;
@@ -16,16 +17,18 @@ public class Main {
                mobile.listContacts();
            break;
            case 2:
-
+               System.out.println("Type number of contact you want to add:");
                phoneNumber = input.nextInt();
                input.nextLine();
+               System.out.println("Type name of contact you want to add:");
                contactName = input.nextLine();
                mobile.addContact(phoneNumber,contactName);
                break;
            case 3:
-
+               System.out.println("Type number of contact you want to remove:");
                phoneNumber = input.nextInt();
                input.nextLine();
+               System.out.println("Type name of contact you want to remove:");
                contactName = input.nextLine();
                mobile.removeContact(phoneNumber,contactName);
                break;
@@ -43,8 +46,10 @@ public class Main {
                mobile.updateContact(phoneNumberold,contactNameold,phoneNumbernew,contactNamenew);
                break;
            case 5:
+               System.out.println("Type number of contact you want to find:");
                phoneNumber = input.nextInt();
                input.nextLine();
+               System.out.println("Type name of contact you want to find:");
                contactName = input.nextLine();
                mobile.searchContact(phoneNumber,contactName);
                break;
@@ -55,26 +60,25 @@ public class Main {
        }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Scanner input = new Scanner(System.in);
         MobilePhone Nokia = new MobilePhone();
 
-
-
-
-        System.out.println("Menu");
-        System.out.println("============================");
-        System.out.println("1.Print list of contacts");
-        System.out.println("2.Add contact");
-        System.out.println("3.Remove contact");
-        System.out.println("4.Update Contact");
-        System.out.println("5.Find Contact");
-        System.out.println("6.Quit");
-        System.out.println("============================");
-        System.out.println("Type number of option you want to choose:");
-        int option = input.nextInt();
-        input.nextLine();
-
+        while(true) {
+            System.out.println("Menu");
+            System.out.println("============================");
+            System.out.println("1.Print list of contacts");
+            System.out.println("2.Add contact");
+            System.out.println("3.Remove contact");
+            System.out.println("4.Update Contact");
+            System.out.println("5.Find Contact");
+            System.out.println("6.Quit");
+            System.out.println("============================");
+            System.out.println("Type number of option you want to choose:");
+            int option = input.nextInt();
+            input.nextLine();
+            Menu(option, Nokia);
+        }
     }
 }

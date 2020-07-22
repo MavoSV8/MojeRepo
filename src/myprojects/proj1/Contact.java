@@ -24,8 +24,8 @@ public class Contact {
     public void setFirstName(String firstName) {
         Name = firstName;
     }
-    public void setPhoneNum(String phoneNum) {
-        phoneNum = phoneNum;
+    public void setPhoneNum(int Num) {
+        phoneNum = Num;
     }
     @Override
     public boolean equals(Object contact) {
